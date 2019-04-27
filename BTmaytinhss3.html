@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Baitapmaytinh</title>
+</head>
+<body>
+<form>
+    <fieldset>
+        <legend>Máy tính của tôi</legend>
+        <input type="text" id="output">
+        <br>
+        <br>
+        <input type="button" value="1" onclick="hienthi(this.value)">
+        &nbsp
+        <input type="button" value="2" onclick="hienthi(this.value)">
+        &nbsp
+        <input type="button" value="3" onclick="hienthi(this.value)">
+        &nbsp
+        <input type="button" value="+" onclick="hienthi(this.value)">
+        <br>
+        <input type="button" value="4" onclick="hienthi(this.value)">
+        &nbsp
+        <input type="button" value="5" onclick="hienthi(this.value)">
+        &nbsp
+        <input type="button" value="6" onclick="hienthi(this.value)">
+        &nbsp
+        <input type="button" value="-" onclick="hienthi(this.value)">
+        <br>
+        <input type="button" value="7" onclick="hienthi(this.value)">
+        &nbsp
+        <input type="button" value="8" onclick="hienthi(this.value)">
+        &nbsp
+        <input type="button" value="9" onclick="hienthi(this.value)">
+        &nbsp
+        <input type="button" value="*" onclick="hienthi(this.value)">
+        <br>
+        <input type="button" value="c" onclick="xoa()">
+        &nbsp
+        <input type="button" value="0" onclick="hienthi(this.value)">
+        &nbsp
+        <input type="button" value="=" onclick="bang()">
+        &nbsp
+        <input type="button" value="/" onclick="hienthi(this.value)">
+        &nbsp
+    </fieldset>
+<script>
+    function hienthi(value) {
+        document.getElementById("output").value +=value;
+    }
+    function xoa(){
+        document.getElementById("output").value = " "
+    }
+    function bang() {
+        document.getElementById("output").value=eval(document.getElementById("output").value);
+    }
+</script>
+
+</form>
+
+</body>
+</html>
